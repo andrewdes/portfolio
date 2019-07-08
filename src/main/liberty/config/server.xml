@@ -23,6 +23,7 @@
         <feature>jndi-1.0</feature>
         <feature>appSecurity-2.0</feature>
         <feature>monitor-1.0</feature>
+        <feature>jpa-2.2</feature>
 <!--    <feature>logstashCollector-1.0</feature> -->
     </featureManager>
 
@@ -113,6 +114,12 @@
     	<user>admin</user>
     </administrator-role>
 -->
+
+<logging  traceSpecification="eclipselink.sql=all"
+  traceFileName="trace.log"
+  maxFileSize="20"
+  maxFiles="10"
+  traceFormat="BASIC" />
 
     <ltpa expiration="1h"/>
 
